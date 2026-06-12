@@ -16,7 +16,7 @@ export const staticContent: Record<"ar" | "en", SiteContent> = {
     locale: "ar",
     direction: "rtl",
     metadata: {
-      title: "Thalaal | رحلات سريلانكا الخاصة",
+      title: "Thalaal | لانكا تورز",
       description:
         "رحلات خاصة ومريحة في سريلانكا للعائلات والأزواج والمسافرين العرب، مع سائق خاص ومساعدة في اختيار الطعام الحلال.",
     },
@@ -320,13 +320,13 @@ export const staticContent: Record<"ar" | "en", SiteContent> = {
     locale: "en",
     direction: "ltr",
     metadata: {
-      title: "Thalaal | Private Sri Lanka Journeys",
+      title: "Thalaal | Lanka Tours",
       description:
         "Private, comfortable Sri Lanka journeys for Arab families, couples and small groups, with a personal chauffeur and halal dining guidance.",
     },
     brand: {
       name: "THALAL",
-      descriptor: "PRIVATE SRI LANKA",
+      descriptor: "Lanka Tours",
     },
     navigation: [
       { label: "Home", path: "" },
