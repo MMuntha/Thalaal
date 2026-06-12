@@ -2,6 +2,7 @@
 
 import { FormEvent, useState } from "react";
 import type { SiteContent } from "@/content/types";
+import { getWhatsAppContact, whatsappUrl } from "@/lib/whatsapp";
 
 function Field({
   label,
@@ -30,6 +31,7 @@ function Field({
 export function ContactForm({ content }: { content: SiteContent }) {
   const [submitted, setSubmitted] = useState(false);
   const form = content.contactPage.form;
+  const whatsappContact = getWhatsAppContact(content.contactPage.contacts);
 
   function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -46,7 +48,7 @@ export function ContactForm({ content }: { content: SiteContent }) {
     ];
 
     setSubmitted(true);
-    window.open(`https://wa.me/?text=${encodeURIComponent(lines.join("\n"))}`);
+    window.open(whatsappUrl(whatsappContact, lines.join("\n")));
   }
 
   return (

@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import type { SiteContent } from "@/content/types";
 import { locales, localePath, switchLocalePath } from "@/lib/i18n";
+import { getWhatsAppContact, whatsappUrl } from "@/lib/whatsapp";
 import { BrandMark } from "./brand-mark";
 
 export function SiteHeader({ content }: { content: SiteContent }) {
@@ -15,6 +16,7 @@ export function SiteHeader({ content }: { content: SiteContent }) {
   const isHome = pathname === localePath(content.locale);
   const otherLocale = locales.find((locale) => locale !== content.locale) ?? "en";
   const solid = !isHome || isScrolled || isOpen;
+  const whatsappContact = getWhatsAppContact(content.contactPage.contacts);
 
   useEffect(() => {
     function onScroll() {
@@ -67,9 +69,10 @@ export function SiteHeader({ content }: { content: SiteContent }) {
             </Link>
             <a
               className="inline-flex items-center gap-2 rounded-full bg-whatsapp px-5 py-3 text-sm font-bold text-white shadow-[0_18px_40px_rgba(31,168,85,0.22)] transition hover:-translate-y-0.5 hover:bg-[#168846]"
-              href={`https://wa.me/?text=${encodeURIComponent(
-                content.home.finalCta.title,
-              )}`}
+              href={whatsappUrl(
+                whatsappContact,
+                content.common.initialWhatsAppMessage,
+              )}
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -115,9 +118,10 @@ export function SiteHeader({ content }: { content: SiteContent }) {
               </Link>
               <a
                 className="mt-2 inline-flex items-center justify-center gap-2 rounded-2xl bg-whatsapp px-4 py-3 text-base font-bold text-white"
-                href={`https://wa.me/?text=${encodeURIComponent(
-                  content.home.finalCta.title,
-                )}`}
+                href={whatsappUrl(
+                  whatsappContact,
+                  content.common.initialWhatsAppMessage,
+                )}
                 rel="noopener noreferrer"
                 target="_blank"
               >

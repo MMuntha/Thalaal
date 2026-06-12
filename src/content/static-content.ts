@@ -36,6 +36,8 @@ export const staticContent: Record<"ar" | "en", SiteContent> = {
       requestTrip: "اطلب هذه الرحلة",
       viewExperiences: "استكشف التجارب",
       languageLabel: "English",
+      initialWhatsAppMessage:
+        "مرحباً، أود التخطيط لرحلة خاصة إلى سريلانكا مع THALAL. هل يمكنكم مساعدتي؟",
     },
     home: {
       hero: {
@@ -205,6 +207,7 @@ export const staticContent: Record<"ar" | "en", SiteContent> = {
           name: "Muhajireen",
           phone: "+94772481814",
           displayPhone: "+94 772 481 814",
+          whatsapp: true,
         },
         {
           name: "Ikram",
@@ -337,6 +340,8 @@ export const staticContent: Record<"ar" | "en", SiteContent> = {
       requestTrip: "Request This Journey",
       viewExperiences: "Explore Experiences",
       languageLabel: "العربية",
+      initialWhatsAppMessage:
+        "Hello, I would like to plan a private Sri Lanka trip with THALAL. Can you help me?",
     },
     home: {
       hero: {
@@ -512,6 +517,7 @@ export const staticContent: Record<"ar" | "en", SiteContent> = {
           name: "Muhajireen",
           phone: "+94772481814",
           displayPhone: "+94 772 481 814",
+          whatsapp: true,
         },
         {
           name: "Ikram",
@@ -525,7 +531,7 @@ export const staticContent: Record<"ar" | "en", SiteContent> = {
         description:
           "You do not need every detail yet. We only need a starting point.",
         name: "Full Name",
-        whatsapp: "+94772481814",
+        whatsapp: "WhatsApp Number",
         country: "Country",
         month: "Travel Month",
         adults: "Number of Adults",

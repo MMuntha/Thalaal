@@ -64,6 +64,7 @@ export interface Contact {
   name: string;
   phone: string;
   displayPhone: string;
+  whatsapp?: boolean;
 }
 
 export interface SiteContent {
@@ -85,6 +86,7 @@ export interface SiteContent {
     requestTrip: string;
     viewExperiences: string;
     languageLabel: string;
+    initialWhatsAppMessage: string;
   };
   home: {
     hero: {

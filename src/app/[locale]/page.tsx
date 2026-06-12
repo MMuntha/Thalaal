@@ -7,6 +7,7 @@ import { ChevronIcon, Icon } from "@/components/icons";
 import { SectionHeading } from "@/components/section-heading";
 import { contentRepository } from "@/lib/content-repository";
 import { isLocale, localePath } from "@/lib/i18n";
+import { getWhatsAppContact, whatsappUrl } from "@/lib/whatsapp";
 
 export default async function HomePage({
   params,
@@ -21,6 +22,7 @@ export default async function HomePage({
 
   const content = await contentRepository.getSiteContent(locale);
   const featuredExperiences = content.experiences.slice(0, 4);
+  const whatsappContact = getWhatsAppContact(content.contactPage.contacts);
 
   return (
     <main>
@@ -59,9 +61,10 @@ export default async function HomePage({
                 </ButtonLink>
                 <ButtonLink
                   external
-                  href={`https://wa.me/?text=${encodeURIComponent(
-                    content.home.finalCta.title,
-                  )}`}
+                  href={whatsappUrl(
+                    whatsappContact,
+                    content.common.initialWhatsAppMessage,
+                  )}
                   variant="ghost"
                 >
                   {content.common.whatsapp}
