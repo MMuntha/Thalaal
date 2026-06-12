@@ -60,6 +60,12 @@ export interface FormOption {
   label: string;
 }
 
+export interface Contact {
+  name: string;
+  phone: string;
+  displayPhone: string;
+}
+
 export interface SiteContent {
   locale: Locale;
   direction: "rtl" | "ltr";
@@ -144,6 +150,7 @@ export interface SiteContent {
     detailsDescription: string;
     responseTime: string;
     email: string;
+    contacts: Contact[];
     location: string;
     form: {
       title: string;

@@ -21,8 +21,8 @@ export const staticContent: Record<"ar" | "en", SiteContent> = {
         "رحلات خاصة ومريحة في سريلانكا للعائلات والأزواج والمسافرين العرب، مع سائق خاص ومساعدة في اختيار الطعام الحلال.",
     },
     brand: {
-      name: "THALAAL",
-      descriptor: "PRIVATE SRI LANKA",
+      name: "طلال",
+      descriptor: "لانكا تورز",
     },
     navigation: [
       { label: "الرئيسية", path: "" },
@@ -199,7 +199,19 @@ export const staticContent: Record<"ar" | "en", SiteContent> = {
       detailsDescription:
         "يمكنكم إرسال رسالة عبر واتساب أو البريد، وسنعود إليكم بأسئلة بسيطة قبل إعداد المقترح.",
       responseTime: "عادة نرد خلال يوم عمل واحد",
-      email: "hello@thalaal.travel",
+      email: "sammuhajireen@gmail.com",
+      contacts: [
+        {
+          name: "Muhajireen",
+          phone: "+94772481814",
+          displayPhone: "+94 772 481 814",
+        },
+        {
+          name: "Ikram",
+          phone: "+94777681835",
+          displayPhone: "+94 777 681 835",
+        },
+      ],
       location: "كولومبو، سريلانكا",
       form: {
         title: "أخبرونا عن رحلتكم",
@@ -310,7 +322,7 @@ export const staticContent: Record<"ar" | "en", SiteContent> = {
         "Private, comfortable Sri Lanka journeys for Arab families, couples and small groups, with a personal chauffeur and halal dining guidance.",
     },
     brand: {
-      name: "THALAAL",
+      name: "THALAL",
       descriptor: "PRIVATE SRI LANKA",
     },
     navigation: [
@@ -379,12 +391,14 @@ export const staticContent: Record<"ar" | "en", SiteContent> = {
           {
             icon: "sparkles",
             title: "Thoughtful choices",
-            description: "Stays and experiences selected for quality, not volume.",
+            description:
+              "Stays and experiences selected for quality, not volume.",
           },
           {
             icon: "shield",
             title: "Travel with confidence",
-            description: "Clear coordination and support throughout the journey.",
+            description:
+              "Clear coordination and support throughout the journey.",
           },
           {
             icon: "heart",
@@ -492,14 +506,26 @@ export const staticContent: Record<"ar" | "en", SiteContent> = {
       detailsDescription:
         "Send us a WhatsApp message or email. We will come back with a few simple questions before preparing your suggestion.",
       responseTime: "We usually reply within one working day",
-      email: "hello@thalaal.travel",
+      email: "sammuhajireen@gmail.com",
+      contacts: [
+        {
+          name: "Muhajireen",
+          phone: "+94772481814",
+          displayPhone: "+94 772 481 814",
+        },
+        {
+          name: "Ikram",
+          phone: "+94777681835",
+          displayPhone: "+94 777 681 835",
+        },
+      ],
       location: "Colombo, Sri Lanka",
       form: {
         title: "Tell us about your journey",
         description:
           "You do not need every detail yet. We only need a starting point.",
         name: "Full Name",
-        whatsapp: "WhatsApp Number",
+        whatsapp: "+94772481814",
         country: "Country",
         month: "Travel Month",
         adults: "Number of Adults",

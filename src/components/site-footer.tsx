@@ -40,6 +40,16 @@ export function SiteFooter({ content }: { content: SiteContent }) {
               {content.footer.contact}
             </h3>
             <div className="mt-5 grid gap-3 text-white/72">
+              {content.contactPage.contacts.map((contact) => (
+                <a
+                  key={contact.phone}
+                  className="inline-flex items-center gap-3 transition hover:text-white"
+                  href={`tel:${contact.phone}`}
+                >
+                  <Icon className="size-4 text-gold" name="phone" />
+                  {contact.name} {contact.displayPhone}
+                </a>
+              ))}
               <a
                 className="inline-flex items-center gap-3 transition hover:text-white"
                 href={`mailto:${content.contactPage.email}`}
