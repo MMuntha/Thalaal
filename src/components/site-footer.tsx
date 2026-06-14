@@ -47,7 +47,7 @@ export function SiteFooter({ content }: { content: SiteContent }) {
                   href={`tel:${contact.phone}`}
                 >
                   <Icon className="size-4 text-gold" name="phone" />
-                  {contact.name} {contact.displayPhone}
+                  {contact.displayPhone}
                 </a>
               ))}
               <a

@@ -204,15 +204,15 @@ export const staticContent: Record<"ar" | "en", SiteContent> = {
       email: "sammuhajireen@gmail.com",
       contacts: [
         {
-          name: "Muhajireen",
+          name: "مهاجرين",
           phone: "+94772481814",
-          displayPhone: "+94 772 481 814",
+          displayPhone: "+٩٤ ٧٧٢٤ ٨١٨١٤",
           whatsapp: true,
         },
         {
-          name: "Ikram",
+          name: "إكرام",
           phone: "+94777681835",
-          displayPhone: "+94 777 681 835",
+          displayPhone: "+٩٤ ٧٧٧ ٦٨١ ٨٣٥",
         },
       ],
       location: "كولومبو، سريلانكا",
@@ -516,7 +516,7 @@ export const staticContent: Record<"ar" | "en", SiteContent> = {
         {
           name: "Muhajireen",
           phone: "+94772481814",
-          displayPhone: "+94 772 481 814",
+          displayPhone: "+94 7724 81814",
           whatsapp: true,
         },
         {
