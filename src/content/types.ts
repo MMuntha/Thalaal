@@ -158,7 +158,8 @@ export interface SiteContent {
       title: string;
       description: string;
       name: string;
-      whatsapp: string;
+      countryCode: string;
+      contactNumber: string;
       country: string;
       month: string;
       adults: string;
@@ -169,6 +170,12 @@ export interface SiteContent {
       successTitle: string;
       successMessage: string;
       required: string;
+      invalidPhone: string;
+      invalidNumber: string;
+      selectPlaceholder: string;
+      countryOptions: FormOption[];
+      monthOptions: FormOption[];
+      countryCodeOptions: FormOption[];
       tripOptions: FormOption[];
     };
   };
