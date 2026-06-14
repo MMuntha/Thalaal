@@ -559,7 +559,7 @@ export const staticContent: Record<"ar" | "en", SiteContent> = {
         {
           name: "Muhajireen",
           phone: "+94772481814",
-          displayPhone: "+94 7724 81814",
+          displayPhone: "+94 772 481 814",
           whatsapp: true,
         },
         {
